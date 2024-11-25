@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Pengguna</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Tambah Pengguna Baru</h1>
+        <form action="/users" method="POST" class="mt-4"> 
+            <div class="form-group">
+                <label for="name">name</label>
+                <input type="text" id="name" name="name"  required class="form-control">
+                <label for="name">email</label>
+                <input type="email" id="email" name="email" required class="form-control">
+                <label for="name">Password</label>
+                <input type="password" id="password" name="password" 
+                required
+                class="form-control">
+            </div>
+            <button type="submit" class="btn btn-secondary">Simpan Perubahan</button>
+            <a href="/users" class="btn btn-secondary">Batal</a>
+
+
+
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
